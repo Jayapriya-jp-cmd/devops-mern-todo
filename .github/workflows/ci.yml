@@ -27,7 +27,7 @@ jobs:
         working-directory: ./backend
         run: |
           npm install
-          node SeedTaskData.js
+          node seedTasksData.js
   test:
     runs-on: ubuntu-latest
     needs: mongo-init

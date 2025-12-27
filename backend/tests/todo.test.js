@@ -5,6 +5,7 @@ describe('GET api/tasks',()=>{
     it('it should return 200',async()=>{
         const res=await request(app).get('/api/tasks');
         expect(res.statusCode).toBe(200);
+        console.log(res.body.tasks);
     })
 })
 afterAll(async()=>{
